@@ -12,8 +12,6 @@ url = "http://reddit.com/r/#{sr}/.json"
 data = RestClient.get(url)
 sr_data_hash = JSON.load(data)
 
-puts sr_data_hash
-
 sr_data_hash["data"]["children"].each do |post|
   puts "Title: #{post["data"]["title"]}"
   puts "Author: #{post["data"]["author"]}"

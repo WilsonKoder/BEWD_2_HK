@@ -15,7 +15,6 @@ end
 guess_count = 0
 num = 5
 
-
 print_intro()
 puts "Input a number between 1 and 10!"
 

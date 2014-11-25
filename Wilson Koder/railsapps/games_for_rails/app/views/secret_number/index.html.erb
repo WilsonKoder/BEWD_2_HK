@@ -1,0 +1,9 @@
+<h1>Welcome to the Secret Number</h1>
+
+<%= link_to("Games for Rails homepage", root_path) %>
+
+<ul>
+  <% @numbers.each do |n| %>
+    <li><%= n %></li>
+  <% end %>
+</ul>
